@@ -7,7 +7,7 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <title>B-DESIGN - Agência de Marketing Digital</title>
   <!-- MDB icon -->
-  <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon">
+  <!-- <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon"> -->
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
   <!-- Google Fonts Roboto -->
@@ -18,18 +18,29 @@
   <link rel="stylesheet" href="css/mdb.min.css">
   <!-- Your custom styles (optional) -->
   <link rel="stylesheet" href="css/style.css">
+
+
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#menu"> 
   <header>
-    <!--Navbar -->
-    <nav class="mb-0 navbar navbar-expand-lg navbar-dark default-color">
-      <a class="navbar-brand" href="#">Navbar</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-333"
-        aria-controls="navbarSupportedContent-333" aria-expanded="false" aria-label="Toggle navigation">
+
+    <!--Navbar-->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark" id="menu">
+
+      <!-- Navbar brand -->
+      <a class="navbar-brand" href="#"><img src="./img/B-DESIGN-logo-white-200.png" alt="Logo"></a>
+
+      <!-- Collapse button -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+        aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent-333">
+
+      <!-- Collapsible content -->
+      <div class="collapse navbar-collapse" id="basicExampleNav">
+
+        <!-- Links -->
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
             <a class="nav-link" href="#">Home
@@ -37,45 +48,28 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Serviços</a>
+            <a class="nav-link" href="#services">Serviços</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Quem Somos</a>
+            <a class="nav-link" href="#about">Quem Somos</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contato</a>
+            <a class="nav-link" href="#contact">Contato</a>
           </li>
+        </ul>
+        <!-- Links -->
 
-          <!-- <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-333" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">Dropdown
-            </a>
-            <div class="dropdown-menu dropdown-default" aria-labelledby="navbarDropdownMenuLink-333">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <a class="dropdown-item" href="#">Something else here</a>
-            </div>
-          </li> -->
-        </ul>
-        <ul class="navbar-nav ml-auto nav-flex-icons">
-          <li class="nav-item">
-            <a class="nav-link waves-effect waves-light">
-              <i class="fab fa-twitter"></i>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link waves-effect waves-light">
-              <i class="fab fa-google-plus-g"></i>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link waves-effect waves-light">
-              <i class="fab fa-facebook"></i>
-            </a>
-          </li>
-        </ul>
+        <form class="form-inline">
+          <div class="md-form my-0">
+            <input class="form-control mr-sm-2 text-white" type="text" placeholder="Pesquisar" aria-label="Search">
+          </div>
+        </form>
       </div>
+      <!-- Collapsible content -->
+
     </nav>
+    <!--/.Navbar-->
+
     <!--/.Navbar -->
   </header>
   <section class="container-fluid banner m-0 p-0">
@@ -92,7 +86,7 @@
       <div class="carousel-inner" role="listbox">
         <div class="carousel-item active">
           <div class="view">
-            <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(68).jpg" alt="First slide">
+            <img class="d-block w-100" src="img/carousel-1.jpg" alt="First slide">
             <div class="mask rgba-black-light"></div>
           </div>
           <div class="carousel-caption">
@@ -103,8 +97,8 @@
         <div class="carousel-item">
           <!--Mask color-->
           <div class="view">
-            <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(6).jpg" alt="Second slide">
-            <div class="mask rgba-black-strong"></div>
+            <img class="d-block w-100" src="img/carousel-2.jpg" alt="Second slide">
+            <div class="mask rgba-black-light"></div>
           </div>
           <div class="carousel-caption">
             <h3 class="h3-responsive">Strong mask</h3>
@@ -114,8 +108,8 @@
         <div class="carousel-item">
           <!--Mask color-->
           <div class="view">
-            <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(9).jpg" alt="Third slide">
-            <div class="mask rgba-black-slight"></div>
+            <img class="d-block w-100" src="img/carousel-3.jpg" alt="Third slide">
+            <div class="mask rgba-black-strong"></div>
           </div>
           <div class="carousel-caption">
             <h3 class="h3-responsive">Slight mask</h3>
@@ -162,17 +156,61 @@
       </div>
     </section>
     <section class="container-fluid" id="about">
-      <h2 class="text-center m-5">Quem Somos</h2>
       <div class="container">
-        <div class="row">
-          <div class="col"></div>
+        <div class="row mt-5">
+          <div class="col">
+            <img src="img/about.png" alt="">
+          </div>
           <div class="col">
             <h3>Quem Somos</h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos nobis illum, a deserunt beatae quae quia expedita? Voluptatibus harum neque ratione dolore ullam ut fugiat nihil alias repudiandae magni temporibus necessitatibus quod deserunt itaque dolorum beatae, molestias nisi reprehenderit placeat cupiditate. Iure rem quidem numquam tempore, quibusdam animi fuga quo. </p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos nobis illum, a deserunt beatae quae quia
+              expedita? Voluptatibus harum neque ratione dolore ullam ut fugiat nihil alias repudiandae magni temporibus
+              necessitatibus quod deserunt itaque dolorum beatae, molestias nisi reprehenderit placeat cupiditate. Iure
+              rem quidem numquam tempore, quibusdam animi fuga quo. </p>
           </div>
         </div>
       </div>
     </section>
+    <section class="cotainer-fluid" id="contact">
+      <h2 class="text-center m-5">Contato</h2>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-12 mb-5">
+            <form action="">
+              <div class="input-group">
+                <label for="name" class="d-block w-100">Nome:</label>
+                <input type="text" name="name" id="name" class="form-control mb-4">
+              </div>
+              <div class="input-group">
+                <label for="email" class="d-block w-100">Email:</label>
+                <input type="email" name="email" id="email" class="form-control mb-4">
+              </div>
+              <div class="input-group">
+                <label for="message" class="d-block w-100">Mensagem:</label>
+                <textarea name="message" id="message" class="form-control mb-4"></textarea>
+              </div>
+
+              <button class="btn btn-secondary">Enviar</button>
+            </form>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12 mb-5">
+            <ul class="ml-0 pl-0">
+              <li><strong>Telefone:</strong> +55 (11) 2222-2222</li>
+              <li><strong>WhatsApp:</strong> +55 (11) 99999-9999</li>
+              <li><strong>Endereço:</strong> Av. Paulista, 1111 - São Paulo - SP</li>
+            </ul>
+
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.100031589745!2d-46.65543958540281!3d-23.564850567605408!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c7da3c3b4b%3A0xd80a22268954a28!2sAv.%20Paulista%2C%201111%20-%20Bela%20Vista%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2001418-100!5e0!3m2!1sen!2sbr!4v1584914080087!5m2!1sen!2sbr"
+              width="100%" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+              tabindex="0"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="text-center">
+      &copy; Copyright 2020 - B-DESIGN
+    </footer>
   </main>
   <!-- jQuery -->
   <script type="text/javascript" src="js/jquery.min.js"></script>
@@ -184,6 +222,10 @@
   <script type="text/javascript" src="js/mdb.min.js"></script>
   <!-- Your custom scripts (optional) -->
   <script type="text/javascript"></script>
+
+  <script>
+    $('body').scrollspy({ target: '#menu'})
+  </script>
 
 </body>
 
